@@ -1,0 +1,153 @@
+
+  import React from 'react';
+import { Briefcase, GraduationCap, Tools, Award, User } from 'lucide-react';
+
+const ResumeWebsite = () => {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Header/Hero Section */}
+      <header className="bg-blue-600 text-white py-16">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl font-bold mb-2">Marc Tuinier</h1>
+          <div className="flex flex-col sm:flex-row gap-4 text-gray-100">
+            <span>Portage, MI 49002</span>
+            <span>•</span>
+            <span>marquidasht@gmail.com</span>
+            <span>•</span>
+            <span>269 588 0760</span>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-8">
+        {/* Summary Section */}
+        <section className="mb-12">
+          <div className="flex items-center gap-2 mb-4">
+            <User className="h-6 w-6 text-blue-600" />
+            <h2 className="text-2xl font-bold text-gray-800">Summary</h2>
+          </div>
+          <p className="text-gray-600 leading-relaxed">
+            Hard-working and detail-oriented professional with over 20 years of experience in
+            construction, manufacturing, masonry, landscaping. Proven ability to execute projects
+            according to specifications, operate equipment safely, and maintain high standards of
+            quality and safety. Adaptable and goal-oriented, with a solid understanding of
+            construction processes, property maintenance, and a developing interest in technology.
+          </p>
+        </section>
+
+        {/* Skills Section */}
+        <section className="mb-12">
+          <div className="flex items-center gap-2 mb-4">
+            <Tools className="h-6 w-6 text-blue-600" />
+            <h2 className="text-2xl font-bold text-gray-800">Skills</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-bold mb-3 text-blue-600">Construction & Masonry</h3>
+              <p className="text-gray-600">
+                Masonry (Brick, Block, Concrete), Tuckpointing, Caulking, Concrete Finishing,
+                Concrete Forming, Hardscape Construction, Residential & Commercial Construction,
+                Renovation
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-bold mb-3 text-blue-600">Equipment Operation</h3>
+              <p className="text-gray-600">
+                All-Terrain Forklift (Certified), Loader Operation, Backhoe Operation,
+                Power Tools, Hand Tools, Landscaping Equipment
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-bold mb-3 text-blue-600">Technical Skills</h3>
+              <p className="text-gray-600">
+                Computer Hardware, Internet of Things (IoT), Raspberry Pi, Python (Basic),
+                Typing
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-bold mb-3 text-blue-600">Landscaping & Groundskeeping</h3>
+              <p className="text-gray-600">
+                Landscape Maintenance, Lawn Care, Mowing, Edging, Trimming, Pruning,
+                Planting, Mulching, Irrigation System Basics
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Experience Section */}
+        <section className="mb-12">
+          <div className="flex items-center gap-2 mb-4">
+            <Briefcase className="h-6 w-6 text-blue-600" />
+            <h2 className="text-2xl font-bold text-gray-800">Work Experience</h2>
+          </div>
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-bold text-lg">Mason Tender/Operator | Local 355 Labor Union</h3>
+              <p className="text-blue-600 mb-2">Mason apprentice-Local 2 Bricklayers | 2015 – 2022</p>
+              <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <li>Constructed and repaired brick, Block, and concrete structures</li>
+                <li>Mixed mortar or grout and laid bricks/blocks to specifications</li>
+                <li>Performed repairs on existing masonry structures</li>
+                <li>Operated heavy equipment including all-terrain forklifts</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-bold text-lg">Landscape Laborer | Nature's Way</h3>
+              <p className="text-blue-600 mb-2">Comstock, MI | 2011 – 2015</p>
+              <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <li>Performed various landscaping and maintenance tasks</li>
+                <li>Constructed hardscapes and assisted with irrigation systems</li>
+                <li>Provided training to new landscape laborers</li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-bold text-lg">Construction Worker | MBoyer Construction</h3>
+              <p className="text-blue-600 mb-2">Kalamazoo, MI | 2005 – 2011</p>
+              <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <li>Specialized in concrete flatwork and retaining wall construction</li>
+                <li>Performed imprinted and colored concrete work</li>
+                <li>Executed general construction tasks and concrete finishing</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Education & Certifications Section */}
+        <section>
+          <div className="flex items-center gap-2 mb-4">
+            <GraduationCap className="h-6 w-6 text-blue-600" />
+            <h2 className="text-2xl font-bold text-gray-800">Education & Certifications</h2>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="mb-4">
+              <h3 className="font-bold text-lg">Education</h3>
+              <ul className="text-gray-600">
+                <li>Portage High School | Portage, MI</li>
+                <li>Local 2 Bricklayer Apprentice School | Lansing, MI</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold text-lg">Certifications</h3>
+              <ul className="text-gray-600">
+                <li>OSHA 10</li>
+                <li>All-Terrain Forklift Certified (Local 355 Labor Union)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white py-6 mt-12">
+        <div className="container mx-auto px-4 text-center">
+          <p>© 2025 Marc Tuinier. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default ResumeWebsite;
